@@ -1,0 +1,97 @@
+body {
+  background-image: url(https://images.pexels.com/photos/1440387/pexels-photo-1440387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=2000);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.business-card {
+  outline: 5px beige;
+  outline-style: ridge;
+  /* background-color: beige; */
+  width: 33vw;
+  background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  /* adjust photo in center */
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  padding: 15px;
+  /* transition: all 0.5s; */
+}
+
+.avatar {
+  width: 33.33%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+}
+
+.personal-details {
+  width: calc(66.66% - 15px);
+}
+
+.name {
+  font-weight: 300;
+}
+
+.job-title {
+  font-weight: 300;
+}
+.contact-details {
+  width: 100%;
+}
+.contact-details dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-details dt {
+  width: 33.33%;
+  margin-right: 15px;
+  text-align: right;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.contact-details dt i {
+  margin-right: 5px;
+}
+.contact-details dd {
+  width: calc(66.66% - 15px);
+  margin-bottom: 5px;
+}
+
+@media (max-width: 415px) {
+  body {
+    background-image: url(https://images.pexels.com/photos/1440387/pexels-photo-1440387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=560);
+  }
+
+  .business-card {
+    justify-content: center;
+    width: 300px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .job-title {
+    font-size: 20px;
+  }
+  .contact-details dd {
+    font-size: 10px;
+  }
+  .contact-details dt {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-image: url(https://images.pexels.com/photos/1440387/pexels-photo-1440387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=550&w=960);
+  }
+  .business-card {
+    justify-content: center;
+    font-size: larger;
+    width: 400px;
+  }
+}
